@@ -58,7 +58,7 @@ const logInitialization = () => {
 
   console.log('%c🚀 ODH Site Carregado com Sucesso!', styles.title);
   console.log('%cDemocratizando o acesso à tecnologia de licitações públicas', styles.subtitle);
-  console.log('%c© 2025 ODH Comércio e Serviços de Assessoria', styles.copyright);
+  console.log('%c© 2025 ODH Comércio e Serviços de Assessoria Ltda.', styles.copyright);
 };
 
 // Aguarda DOM estar pronto

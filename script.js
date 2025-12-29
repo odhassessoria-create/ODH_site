@@ -189,7 +189,7 @@
       init: function() {
         initFadeIn();
         initFloatingCards();
-        initStatsCounters();
+        // initStatsCounters(); // Desativado - causava erro no 24/7
       }
     };
   })();
