@@ -268,6 +268,198 @@
   flex-wrap: wrap;
 }
 
+/* ===========================
+   PRICING EMISSOR
+   =========================== */
+.emissor-pricing-section {
+  background: var(--dark);
+  padding: 100px 0;
+  color: var(--text-light);
+}
+
+.emissor-pricing-section .subtitle {
+  color: rgba(220,220,220,0.8);
+}
+
+/* ===========================
+   COMBO ODH LICITAÇÕES
+   =========================== */
+.combo-section {
+  background: linear-gradient(135deg, var(--dark-2) 0%, var(--dark-3) 100%);
+  padding: 100px 0;
+  color: var(--text-light);
+}
+
+.combo-card {
+  background: var(--dark);
+  border: 2px solid var(--gold);
+  border-radius: 24px;
+  max-width: 900px;
+  margin: 40px auto 0;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(245, 196, 0, 0.15);
+}
+
+.combo-header {
+  background: linear-gradient(135deg, rgba(245, 196, 0, 0.1) 0%, rgba(245, 196, 0, 0.05) 100%);
+  padding: 30px 40px;
+  border-bottom: 1px solid rgba(245, 196, 0, 0.2);
+}
+
+.combo-products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.combo-product {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255,255,255,0.05);
+  padding: 15px 25px;
+  border-radius: 12px;
+}
+
+.combo-product .combo-icon {
+  font-size: 32px;
+}
+
+.combo-product div {
+  text-align: left;
+}
+
+.combo-product strong {
+  display: block;
+  font-size: 16px;
+  color: var(--gold);
+}
+
+.combo-product span {
+  font-size: 13px;
+  color: rgba(220,220,220,0.7);
+}
+
+.combo-product .combo-price-single {
+  font-size: 14px;
+  color: rgba(220,220,220,0.5);
+  margin-left: 15px;
+  text-decoration: line-through;
+}
+
+.combo-plus {
+  font-size: 32px;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.combo-pricing {
+  padding: 40px;
+  text-align: center;
+  background: rgba(109, 212, 126, 0.05);
+}
+
+.combo-original {
+  margin-bottom: 15px;
+}
+
+.combo-original .label {
+  font-size: 14px;
+  color: rgba(220,220,220,0.6);
+  margin-right: 10px;
+}
+
+.combo-original .value {
+  font-size: 18px;
+  color: rgba(220,220,220,0.5);
+}
+
+.combo-final {
+  margin-bottom: 20px;
+}
+
+.combo-final .label {
+  display: block;
+  font-size: 14px;
+  color: var(--gold);
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.combo-final .value {
+  font-size: 56px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.combo-final .value small {
+  font-size: 20px;
+  color: rgba(220,220,220,0.8);
+}
+
+.combo-savings {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.savings-badge {
+  background: var(--green);
+  color: var(--dark);
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.savings-yearly {
+  font-size: 13px;
+  color: rgba(220,220,220,0.7);
+}
+
+.combo-benefits {
+  padding: 30px 40px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.combo-benefits h4 {
+  text-align: center;
+  font-size: 18px;
+  color: var(--gold);
+  margin-bottom: 25px;
+}
+
+.combo-benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.combo-cta {
+  padding: 30px 40px 40px;
+  text-align: center;
+  background: rgba(0,0,0,0.2);
+}
+
+.combo-cta .btn {
+  font-size: 18px;
+  padding: 18px 50px;
+}
+
+.combo-note {
+  display: block;
+  margin-top: 15px;
+  font-size: 13px;
+  color: rgba(220,220,220,0.6);
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .features-grid-3 {
@@ -280,6 +472,20 @@
   
   .diff-content {
     grid-template-columns: 1fr;
+  }
+  
+  .combo-products {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .combo-plus {
+    transform: rotate(90deg);
+  }
+  
+  .combo-benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
   }
 }
 
@@ -295,5 +501,21 @@
   .cta-buttons {
     flex-direction: column;
     align-items: center;
+  }
+  
+  .combo-header,
+  .combo-pricing,
+  .combo-benefits,
+  .combo-cta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .combo-final .value {
+    font-size: 42px;
+  }
+  
+  .combo-product .combo-price-single {
+    display: none;
   }
 }

@@ -89,6 +89,51 @@
   font-size: 12px;
 }
 
+/* Price Preview */
+.emissor-price-preview {
+  background: rgba(0,0,0,0.2);
+  padding: 15px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.emissor-price-preview .label {
+  display: block;
+  font-size: 12px;
+  color: rgba(220,220,220,0.7);
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.emissor-price-preview .price {
+  font-size: 28px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.emissor-price-preview .price small {
+  font-size: 14px;
+  color: rgba(220,220,220,0.8);
+}
+
+/* Link Combo */
+.link-combo {
+  display: block;
+  margin-top: 15px;
+  font-size: 14px;
+  color: var(--gold);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link-combo:hover {
+  color: var(--green);
+  text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .emissor-grid {
