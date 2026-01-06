@@ -1,0 +1,145 @@
+/**
+ * @fileoverview Página de Contato
+ * @description Estilos da página contato.html
+ * Princípio: SRP - Apenas estilos da página de contato
+ */
+
+/* Hero */
+.contato-hero {
+  background: linear-gradient(135deg, var(--dark) 0%, #1a3a2a 100%);
+  padding: 120px 0 60px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.contato-hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.contato-tagline {
+  font-size: 18px;
+  color: rgba(220,220,220,0.85);
+  margin-top: 20px;
+  line-height: 1.7;
+}
+
+/* Form Section */
+.contato-form-section {
+  background: var(--light);
+  padding: 80px 0;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.contato-info h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.contato-info > p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.7;
+  margin-bottom: 30px;
+}
+
+.contato-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.contato-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.contato-card-icon {
+  font-size: 28px;
+  flex-shrink: 0;
+}
+
+.contato-card strong {
+  display: block;
+  font-size: 16px;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.contato-card p {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.contato-direto {
+  background: var(--dark);
+  color: var(--text-light);
+  padding: 25px;
+  border-radius: 12px;
+}
+
+.contato-direto h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: var(--gold);
+}
+
+.contato-lista {
+  list-style: none;
+  padding: 0;
+}
+
+.contato-lista li {
+  margin-bottom: 12px;
+}
+
+.contato-lista a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.contato-lista a:hover {
+  color: var(--gold);
+}
+
+.contato-form-card {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.contato-form h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+  color: var(--text-dark);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .contato-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .contato-form-card {
+    padding: 25px 20px;
+  }
+}

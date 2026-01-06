@@ -1,0 +1,299 @@
+/**
+ * @fileoverview Página ODH Essência
+ * @description Estilos da página emissor-nfe.html
+ * Princípio: SRP - Apenas estilos da página Essência
+ */
+
+/* Hero */
+.essencia-hero {
+  background: linear-gradient(135deg, var(--dark) 0%, #1a2a3a 100%);
+  padding: 120px 0 80px;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.essencia-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.essencia-tagline {
+  font-size: 24px;
+  color: rgba(220,220,220,0.9);
+  margin: 20px 0;
+  font-family: 'Playfair Display', serif;
+}
+
+.essencia-description {
+  font-size: 18px;
+  color: rgba(220,220,220,0.75);
+  line-height: 1.7;
+}
+
+/* Features */
+.essencia-features {
+  background: var(--light);
+  padding: 80px 0;
+}
+
+.features-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.feature-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  transition: transform 0.3s;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-box.highlight-box {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+  color: var(--text-light);
+  border: 2px solid var(--green);
+}
+
+.feature-icon-large {
+  font-size: 48px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.feature-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.feature-box.highlight-box h3 {
+  color: var(--green);
+}
+
+.feature-subtitle {
+  font-size: 14px;
+  color: rgba(220,220,220,0.8);
+  margin-bottom: 15px;
+}
+
+.feature-list {
+  list-style: none;
+  text-align: left;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.feature-list li {
+  padding: 8px 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 14px;
+}
+
+.feature-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-weight: bold;
+}
+
+/* Audience */
+.essencia-audience {
+  background: var(--dark);
+  padding: 80px 0;
+  color: var(--text-light);
+}
+
+/* How To */
+.essencia-howto {
+  background: var(--light);
+  padding: 80px 0;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.step-card {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.step-number {
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  background: var(--gold);
+  color: var(--dark);
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.step-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.step-card p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Differentials */
+.essencia-diff {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+  padding: 80px 0;
+  color: var(--text-light);
+}
+
+.diff-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.diff-text h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.diff-text p {
+  font-size: 18px;
+  color: rgba(220,220,220,0.85);
+  margin-bottom: 30px;
+}
+
+.diff-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.diff-card {
+  background: rgba(109, 212, 126, 0.1);
+  border: 2px solid var(--green);
+  border-radius: 20px;
+  padding: 50px 40px;
+  text-align: center;
+}
+
+.diff-icon {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.diff-card h3 {
+  font-size: 24px;
+  color: var(--green);
+  margin-bottom: 10px;
+}
+
+.diff-card p {
+  color: rgba(220,220,220,0.8);
+}
+
+/* Waitlist */
+.essencia-waitlist {
+  background: var(--light);
+  padding: 80px 0;
+}
+
+.waitlist-card {
+  background: white;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+}
+
+.waitlist-icon {
+  font-size: 64px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.waitlist-card h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.waitlist-card > p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.waitlist-form {
+  text-align: left;
+}
+
+/* CTA */
+.essencia-cta {
+  background: var(--dark);
+  padding: 60px 0;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.essencia-cta h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .features-grid-3 {
+    grid-template-columns: 1fr;
+  }
+  
+  .steps-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .diff-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .waitlist-card {
+    padding: 30px 20px;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

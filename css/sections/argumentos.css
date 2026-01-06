@@ -1,0 +1,98 @@
+/**
+ * @fileoverview Argumentos Lógicos Section
+ * @description Seção com dados do mercado e mapa do Brasil
+ * Princípio: SRP - Apenas estilos da seção de argumentos
+ */
+
+.argumentos-section {
+  background: var(--dark);
+  color: var(--text-light);
+  padding: 100px 0;
+  overflow: hidden;
+}
+
+.argumentos-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.argumentos-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.argumento-box {
+  background: rgba(255,255,255,0.03);
+  border-left: 3px solid var(--gold);
+  padding: 25px 30px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.argumento-box:hover {
+  background: rgba(255,255,255,0.06);
+  transform: translateX(10px);
+}
+
+.argumento-box p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(220,220,220,0.95);
+}
+
+.argumento-box strong {
+  color: var(--gold);
+}
+
+.argumentos-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.mapa-brasil {
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mapa-brasil-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.4));
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.brasil-svg {
+  width: 100%;
+  height: auto;
+}
+
+.brasil-outline {
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.5));
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 40px rgba(0, 212, 255, 0.6));
+  }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .argumentos-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

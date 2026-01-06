@@ -1,0 +1,104 @@
+/**
+ * @fileoverview Seção Emissor de NF
+ * @description Seção do ODH Essência na index
+ * Princípio: SRP - Apenas estilos da seção emissor
+ */
+
+.emissor-section {
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-2) 100%);
+  padding: 100px 0;
+  color: var(--text-light);
+}
+
+.emissor-intro {
+  font-size: 18px;
+  color: rgba(220,220,220,0.85);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.emissor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  margin-top: 60px;
+  align-items: start;
+}
+
+.emissor-features {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.emissor-cta-card {
+  background: linear-gradient(135deg, rgba(74, 144, 226, 0.15) 0%, rgba(74, 144, 226, 0.05) 100%);
+  border: 1px solid rgba(74, 144, 226, 0.3);
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+}
+
+.emissor-icon {
+  font-size: 60px;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.emissor-cta-card h3 {
+  font-size: 24px;
+  color: var(--blue);
+  margin-bottom: 10px;
+}
+
+.emissor-text {
+  color: rgba(220,220,220,0.8);
+  margin-bottom: 25px;
+}
+
+.emissor-note {
+  display: block;
+  margin-top: 15px;
+  color: var(--blue);
+  font-size: 14px;
+}
+
+/* Mini List */
+.mini-list {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.mini-list li {
+  font-size: 13px;
+  color: rgba(220,220,220,0.85);
+  padding: 6px 0;
+  padding-left: 22px;
+  position: relative;
+  line-height: 1.4;
+}
+
+.mini-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--green);
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .emissor-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .emissor-cta-card {
+    padding: 30px 20px;
+  }
+}

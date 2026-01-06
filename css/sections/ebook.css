@@ -1,0 +1,114 @@
+/**
+ * @fileoverview eBook Section
+ * @description Seção do e-Book LiciteFácil 8x
+ * Princípio: SRP - Apenas estilos da seção de ebook
+ */
+
+.ebook-section {
+  padding: 100px 0;
+  background: var(--light);
+}
+
+.ebook-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.ebook-content h2 {
+  font-size: 42px;
+  margin: 20px 0;
+}
+
+.ebook-content p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.learning-box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  margin-bottom: 30px;
+}
+
+.learning-box h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+.ebook-note {
+  display: block;
+  font-size: 13px;
+  color: #666;
+  margin-top: 15px;
+}
+
+.ebook-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.device-mockup {
+  position: relative;
+  max-width: 400px;
+}
+
+.ebook-cover {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+}
+
+.price-tag {
+  position: absolute;
+  bottom: 10px;
+  right: -50px;
+  background: var(--dark);
+  color: var(--text-light);
+  padding: 12px 16px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.price-tag .label {
+  display: block;
+  font-size: 10px;
+  color: rgba(220,220,220,0.7);
+  margin-bottom: 3px;
+}
+
+.price-tag strong {
+  display: block;
+  font-size: 22px;
+  color: var(--gold);
+  margin: 3px 0;
+}
+
+.price-tag small {
+  display: block;
+  font-size: 11px;
+  color: rgba(220,220,220,0.8);
+}
+
+/* eBook Bonus */
+.ebook-bonus {
+  text-align: left;
+  max-width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .ebook-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

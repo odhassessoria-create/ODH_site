@@ -7,7 +7,7 @@
 
 > **Democratizando o acesso à tecnologia de licitações públicas no Brasil.**
 
-Site institucional da ODH, empresa especializada em tecnologia para licitações públicas, oferecendo o robô de lances **ODH PRISMA VECTOR**, o eBook **LiciteFácil 8x** e programas de mentoria.
+Site institucional da ODH, empresa especializada em tecnologia para licitações públicas, oferecendo o Bot de Lances **ODH PRISMA VECTOR**, o **e-Book LiciteFácil 8x** e o curso prático **ODH Start**.
 
 ---
 
@@ -56,12 +56,12 @@ Guia completo para participar e investir no mercado de licitações públicas.
 - **Preço:** R$ 19,90 (pagamento único)
 - **Formato:** PDF Digital com acesso imediato
 
-### 🎓 Mentoria 12 Meses
-Programa completo com acompanhamento direto do fundador.
-- Aulas aprofundadas
-- Insights reais do mercado
-- Robô de Lances incluído
-- Vagas limitadas
+### 🎓 ODH Start — Licitações na Prática
+Curso prático com aulas gravadas e acompanhamento direto do fundador.
+- **Preço Fundador:** R$ 697,00 (ou 12x de R$ 69,70)
+- Conteúdo em construção progressiva
+- Acesso ao Bot de Lances incluso
+- Todas as atualizações futuras sem custo adicional
 
 ### 🤝 Assessoria Personalizada
 Consultoria sob medida para empresas e pessoas físicas.
@@ -83,12 +83,22 @@ Consultoria sob medida para empresas e pessoas físicas.
 ```
 /Site
 ├── 📄 index.html              # Página principal
-├── 🎨 styles.css              # Estilos globais
+├── 📄 odh-start.html          # Página do curso ODH Start
+├── 📄 emissor-nfe.html        # Página do ODH Essência
+├── 📄 contato.html            # Formulário de contato
+├── 🎨 styles.css              # Estilos legados (seções específicas)
 ├── ⚡ script.js               # JavaScript bundled
 ├── 📖 README.md               # Documentação
-├── 📋 guia de assets...txt    # Guia de implementação
 │
-├── 📁 js/                     # Módulos JavaScript (ES6)
+├── 📁 css/                    # CSS Modular (SOLID/DRY)
+│   ├── main.css               # Ponto de entrada (imports)
+│   ├── variables.css          # Design tokens
+│   ├── base.css               # Reset e base
+│   ├── components.css         # Componentes reutilizáveis
+│   ├── layout.css             # Navbar, Footer
+│   └── responsive.css         # Media queries
+│
+├── 📁 js/                     # JavaScript Modular (ES6)
 │   ├── main.js                # Ponto de entrada
 │   ├── config.js              # Configurações centralizadas
 │   ├── utils.js               # Utilitários reutilizáveis
@@ -106,6 +116,29 @@ Consultoria sob medida para empresas e pessoas físicas.
         ├── service-hologram.jpg
         └── laptop-bg.jpg
 ```
+
+---
+
+## 🏗️ Arquitetura
+
+O projeto segue princípios **SOLID** e **DRY**:
+
+| Princípio | Aplicação |
+|-----------|-----------|
+| **S**ingle Responsibility | Cada arquivo CSS/JS tem uma única responsabilidade |
+| **O**pen/Closed | Componentes extensíveis via modificadores (`.btn.large`) |
+| **D**RY | Design tokens em `variables.css`, componentes reutilizáveis |
+
+### CSS Modular
+- `variables.css` - Todas as cores, fontes, espaçamentos centralizados
+- `components.css` - Botões, pills, checklists, cards reutilizáveis
+- `layout.css` - Navbar e Footer (estrutura do site)
+- `responsive.css` - Breakpoints organizados por tamanho
+
+### JavaScript Modular
+- Imports ES6 com separação clara de responsabilidades
+- Configurações centralizadas em `config.js`
+- Utilitários reutilizáveis em `utils.js`
 
 ---
 
@@ -205,7 +238,7 @@ main.js (entrada)
 3. **Argumentos Lógicos** - Dados do mercado + mapa do Brasil
 4. **Robô de Lances** - Planos e preços
 5. **eBook** - LiciteFácil 8x
-6. **Mentoria** - Programa de 12 meses
+6. **ODH Start** - Curso prático de licitações
 7. **Assessoria** - Consultoria personalizada
 8. **CTA Final** - Chamada para ação
 9. **Footer** - Contatos e links

@@ -1,0 +1,130 @@
+/**
+ * @fileoverview Responsividade Global
+ * @description Media queries centralizadas
+ * Princípio: DRY - Breakpoints definidos uma vez
+ * Princípio: SRP - Apenas regras responsivas
+ */
+
+/* ===========================
+   TABLET (max-width: 992px)
+   =========================== */
+@media (max-width: 992px) {
+  /* Layout */
+  .modules-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .includes-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .includes-cta {
+    order: -1;
+  }
+  
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+}
+
+/* ===========================
+   MOBILE (max-width: 768px)
+   =========================== */
+@media (max-width: 768px) {
+  /* Tipografia */
+  h1 {
+    font-size: var(--fs-3xl) !important;
+  }
+  
+  h2 {
+    font-size: var(--fs-2xl) !important;
+  }
+  
+  /* Navbar */
+  .nav-links {
+    display: none;
+  }
+  
+  .logo-sub {
+    display: none;
+  }
+  
+  /* Layout */
+  .hero-content {
+    padding: 120px 0 80px;
+  }
+  
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  /* Grids */
+  .modules-grid,
+  .audience-grid,
+  .pricing-grid,
+  .target-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Cards */
+  .signup-card {
+    padding: 40px 25px;
+  }
+  
+  /* Flexbox */
+  .founder-values,
+  .trust-badges {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .transparency-box {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Footer */
+  .footer-bottom .container {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .footer-links {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Seções específicas */
+  .start-hero {
+    padding: 120px 0 80px;
+  }
+  
+  .start-tagline {
+    font-size: 1.4rem;
+  }
+}
+
+/* ===========================
+   MOBILE PEQUENO (max-width: 480px)
+   =========================== */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+  
+  .btn.large {
+    padding: 14px 24px;
+    font-size: var(--fs-base);
+  }
+  
+  .pill {
+    padding: 6px 14px;
+    font-size: var(--fs-xs);
+  }
+}

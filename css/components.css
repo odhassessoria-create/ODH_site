@@ -1,0 +1,363 @@
+/**
+ * @fileoverview Componentes reutilizáveis
+ * @description Botões, cards, badges, pills, listas
+ * Princípio: DRY - Componentes genéricos reutilizáveis
+ * Princípio: OCP - Extensível via modificadores
+ */
+
+/* ===========================
+   BOTÕES
+   =========================== */
+.btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: var(--fs-base);
+  transition: all var(--transition-base);
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn.large {
+  padding: 18px 36px;
+  font-size: var(--fs-lg);
+}
+
+.btn.full-width {
+  width: 100%;
+}
+
+/* Variantes */
+.btn-primary {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.btn-primary:hover {
+  background: var(--gold-soft);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-gold);
+}
+
+.btn-dark-text {
+  color: #000 !important;
+  font-weight: 700;
+}
+
+.btn-outline {
+  border: 2px solid var(--gold);
+  color: var(--gold);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.btn-outline-white {
+  border: 2px solid white;
+  color: white;
+  background: transparent;
+}
+
+.btn-outline-white:hover {
+  background: white;
+  color: var(--dark);
+}
+
+/* ===========================
+   PILLS / TAGS
+   =========================== */
+.pill {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.pill.gold,
+.pill:not(.green):not(.blue):not(.red) {
+  background: rgba(245, 196, 0, 0.2);
+  color: var(--gold);
+}
+
+.pill.green {
+  background: rgba(109, 212, 126, 0.2);
+  color: var(--green);
+}
+
+.pill.blue {
+  background: rgba(74, 144, 226, 0.2);
+  color: var(--blue);
+}
+
+.pill.red {
+  background: rgba(255, 71, 87, 0.2);
+  color: var(--red);
+}
+
+/* ===========================
+   CHECKLIST
+   =========================== */
+.checklist {
+  list-style: none;
+  margin: 30px 0;
+}
+
+.checklist li {
+  padding: 6px 0;
+  font-size: var(--fs-base);
+  position: relative;
+  padding-left: 22px;
+  line-height: 1.5;
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  color: var(--green);
+  font-weight: bold;
+  font-size: var(--fs-sm);
+  line-height: 1.5;
+}
+
+/* Variantes de cor */
+.checklist.green li::before {
+  color: var(--green);
+}
+
+.checklist.gold li::before {
+  color: var(--gold);
+}
+
+.checklist.dark li::before {
+  color: var(--dark);
+}
+
+/* ===========================
+   BONUS BOX
+   =========================== */
+.bonus-box {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-lg);
+  padding: 20px 25px;
+  margin: 25px auto;
+  max-width: 500px;
+}
+
+.bonus-box h4 {
+  font-size: var(--fs-base);
+  color: var(--gold);
+  margin-bottom: var(--spacing-sm);
+  font-family: var(--font-body);
+  font-weight: 700;
+}
+
+.bonus-box .checklist {
+  margin: 0;
+}
+
+.bonus-box .checklist li {
+  font-size: var(--fs-sm);
+  padding: 6px 0;
+  padding-left: 18px;
+  line-height: 1.4;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.bonus-box .checklist li::before {
+  top: 6px;
+  left: 0;
+  font-size: 13px;
+  color: var(--green);
+}
+
+/* Variante para fundo claro */
+.bonus-box.light {
+  background: rgba(0, 0, 0, 0.06);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.bonus-box.light h4 {
+  color: var(--dark);
+}
+
+.bonus-box.light .checklist li {
+  color: var(--dark);
+}
+
+.bonus-box.light .checklist li::before {
+  color: var(--green);
+}
+
+/* ===========================
+   FEATURE CARDS
+   =========================== */
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-lg);
+  background: rgba(255,255,255,0.05);
+  padding: 25px;
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--gold);
+  transition: transform var(--transition-base), background var(--transition-base);
+}
+
+.feature-card:hover {
+  transform: translateX(5px);
+  background: rgba(255,255,255,0.1);
+}
+
+.feature-card .feature-icon {
+  font-size: 32px;
+  flex-shrink: 0;
+}
+
+.feature-card strong {
+  display: block;
+  font-size: var(--fs-lg);
+  margin-bottom: var(--spacing-xs);
+}
+
+.feature-card p {
+  font-size: var(--fs-sm);
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* Variantes de cor */
+.feature-card.green {
+  border-left-color: var(--green);
+}
+
+.feature-card.yellow {
+  border-left-color: var(--gold);
+}
+
+.feature-card.red {
+  border-left-color: var(--red);
+}
+
+.feature-card.blue {
+  border-left-color: var(--blue);
+}
+
+/* ===========================
+   FORMULÁRIOS
+   =========================== */
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-lg);
+}
+
+.form-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+  color: var(--dark);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: var(--radius-md);
+  font-size: var(--fs-base);
+  transition: border-color var(--transition-base);
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.form-note {
+  display: block;
+  text-align: center;
+  margin-top: var(--spacing-md);
+  color: #888;
+  font-size: var(--fs-sm);
+}
+
+/* ===========================
+   MENSAGENS DE SUCESSO/ERRO
+   =========================== */
+.success-message {
+  text-align: center;
+  padding: var(--spacing-2xl);
+}
+
+.success-icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: var(--spacing-lg);
+}
+
+.success-message h3 {
+  color: var(--green);
+  margin-bottom: var(--spacing-md);
+}
+
+.success-message p {
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-xl);
+}
+
+/* ===========================
+   PRICE BLOCK
+   =========================== */
+.price-block {
+  background: rgba(0,0,0,0.15);
+  padding: 25px;
+  border-radius: var(--radius-lg);
+  margin-bottom: 25px;
+}
+
+.price-block .price-label {
+  font-size: var(--fs-sm);
+  color: rgba(0,0,0,0.7);
+  display: block;
+  margin-bottom: var(--spacing-sm);
+}
+
+.price-block .price-big {
+  font-size: var(--fs-5xl);
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--dark);
+  margin: 0;
+  line-height: 1;
+}
+
+.price-block .price-big sup {
+  font-size: var(--fs-xl);
+  vertical-align: super;
+}
+
+.price-block .price-parcel {
+  display: block;
+  margin-top: var(--spacing-sm);
+  color: rgba(0,0,0,0.7);
+  font-size: var(--fs-base);
+}

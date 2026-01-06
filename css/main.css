@@ -1,0 +1,77 @@
+/**
+ * @fileoverview Entrada principal do CSS modular
+ * @description Importa todos os módulos CSS na ordem correta
+ * 
+ * Arquitetura modular seguindo:
+ * - SOLID: Cada arquivo tem uma responsabilidade única
+ * - DRY: Componentes reutilizáveis centralizados
+ * - OCP: Aberto para extensão, fechado para modificação
+ * 
+ * Estrutura:
+ * /css
+ *   ├── main.css        - Este arquivo (imports)
+ *   ├── variables.css   - Design tokens
+ *   ├── base.css        - Reset e estilos base
+ *   ├── components.css  - Componentes reutilizáveis
+ *   ├── layout.css      - Navbar, Footer, Grids
+ *   ├── responsive.css  - Media queries
+ *   ├── sections/       - Seções da homepage
+ *   │   ├── hero.css
+ *   │   ├── about.css
+ *   │   ├── argumentos.css
+ *   │   ├── robot.css
+ *   │   ├── ebook.css
+ *   │   ├── odhstart.css
+ *   │   ├── assessoria.css
+ *   │   ├── cta-footer.css
+ *   │   └── emissor.css
+ *   └── pages/          - Páginas específicas
+ *       ├── essencia.css
+ *       ├── contato.css
+ *       └── odhstart.css
+ */
+
+/* ===================================
+   1. VARIÁVEIS (deve vir primeiro)
+   =================================== */
+@import url('./variables.css');
+
+/* ===================================
+   2. BASE E RESET
+   =================================== */
+@import url('./base.css');
+
+/* ===================================
+   3. COMPONENTES REUTILIZÁVEIS
+   =================================== */
+@import url('./components.css');
+
+/* ===================================
+   4. LAYOUT ESTRUTURAL
+   =================================== */
+@import url('./layout.css');
+
+/* ===================================
+   5. SEÇÕES DA HOMEPAGE
+   =================================== */
+@import url('./sections/hero.css');
+@import url('./sections/about.css');
+@import url('./sections/argumentos.css');
+@import url('./sections/robot.css');
+@import url('./sections/ebook.css');
+@import url('./sections/odhstart.css');
+@import url('./sections/assessoria.css');
+@import url('./sections/cta-footer.css');
+@import url('./sections/emissor.css');
+
+/* ===================================
+   6. PÁGINAS ESPECÍFICAS
+   =================================== */
+@import url('./pages/essencia.css');
+@import url('./pages/contato.css');
+@import url('./pages/odhstart.css');
+
+/* ===================================
+   7. RESPONSIVIDADE (deve vir por último)
+   =================================== */
+@import url('./responsive.css');

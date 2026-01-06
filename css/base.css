@@ -1,0 +1,106 @@
+/**
+ * @fileoverview Reset e estilos base
+ * @description Normalização e estilos fundamentais
+ * Princípio: SRP - Apenas reset e base
+ */
+
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--light);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tipografia */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Utilities */
+.highlight {
+  color: var(--gold);
+}
+
+.highlight-red {
+  color: var(--red);
+}
+
+.highlight-green {
+  color: var(--green);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Section Header (reutilizável) */
+.section-header {
+  margin-bottom: var(--spacing-2xl);
+}
+
+.section-header.center {
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: var(--fs-4xl);
+  margin-bottom: var(--spacing-md);
+}
+
+.section-header .subtitle {
+  font-size: var(--fs-lg);
+  color: var(--text-muted);
+}
+
+.section-header .subtitle-white {
+  color: rgba(220,220,220,0.9);
+  font-size: var(--fs-xl);
+  font-weight: 400;
+  margin-top: var(--spacing-sm);
+}
