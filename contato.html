@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Entre em contato com a equipe ODH. Assessoria e consultoria personalizada para licitações públicas." />
+  <title>Fale com um Especialista | ODH Assessoria</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="navbar">
+  <div class="container nav-content">
+    <div class="logo-container">
+      <a href="index.html" style="display: flex; align-items: center; gap: 15px; text-decoration: none;">
+        <img src="assets/img/logo-odh.png" alt="ODH Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-main">ODH</span>
+          <span class="logo-sub">COMÉRCIO E SERVIÇOS DE ASSESSORIA LTDA.</span>
+        </div>
+      </a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">← Voltar ao Site</a>
+      <a href="index.html#automacao">Bot de Lances</a>
+      <a href="index.html#ebook" class="btn btn-primary btn-dark-text">Comprar e-Book R$ 19,90</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO CONTATO -->
+<section class="contato-hero">
+  <div class="container">
+    <div class="contato-hero-content">
+      <span class="pill green">Atendimento Personalizado</span>
+      <h1>Fale com um <span class="highlight">Especialista</span></h1>
+      <p class="contato-tagline">
+        Conte-nos sobre sua situação e objetivos. Nossa equipe vai analisar 
+        e entrar em contato com a melhor solução para você.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULÁRIO DE CONTATO -->
+<section class="contato-form-section">
+  <div class="container">
+    <div class="contato-grid">
+      <div class="contato-info">
+        <h2>Como podemos <span class="highlight-red">ajudar?</span></h2>
+        <p>
+          Seja para tirar dúvidas, solicitar uma consultoria personalizada ou 
+          entender qual produto é ideal para você — estamos aqui.
+        </p>
+
+        <div class="contato-cards">
+          <div class="contato-card">
+            <span class="contato-card-icon">🏢</span>
+            <div>
+              <strong>Para Empresas</strong>
+              <p>Estruturação completa para participar de licitações</p>
+            </div>
+          </div>
+
+          <div class="contato-card">
+            <span class="contato-card-icon">👤</span>
+            <div>
+              <strong>Para Iniciantes</strong>
+              <p>Orientação sobre por onde começar</p>
+            </div>
+          </div>
+
+          <div class="contato-card">
+            <span class="contato-card-icon">🎯</span>
+            <div>
+              <strong>Consultoria Estratégica</strong>
+              <p>Análise de perfil e oportunidades</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contato-direto">
+          <h3>Prefere contato direto?</h3>
+          <ul class="contato-lista">
+            <li><a href="mailto:odhassessoria@gmail.com">📧 odhassessoria@gmail.com</a></li>
+            <li><a href="tel:+5584999275704">📞 (84) 9 9927-5704</a></li>
+            <li><a href="https://wa.me/5584999275704" target="_blank">💬 WhatsApp</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="contato-form-card">
+        <form id="contatoForm" class="contato-form">
+          <h3>📝 Preencha o formulário</h3>
+          
+          <div class="form-group">
+            <label for="contato-nome">Nome Completo *</label>
+            <input type="text" id="contato-nome" name="nome" required placeholder="Seu nome completo" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contato-email">E-mail *</label>
+              <input type="email" id="contato-email" name="email" required placeholder="seu@email.com" />
+            </div>
+            <div class="form-group">
+              <label for="contato-telefone">Telefone / WhatsApp *</label>
+              <input type="tel" id="contato-telefone" name="telefone" required placeholder="(00) 00000-0000" />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="contato-empresa">Nome da Empresa</label>
+              <input type="text" id="contato-empresa" name="empresa" placeholder="Se aplicável" />
+            </div>
+            <div class="form-group">
+              <label for="contato-cnpj">CNPJ</label>
+              <input type="text" id="contato-cnpj" name="cnpj" placeholder="00.000.000/0000-00" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="contato-interesse">Qual seu principal interesse? *</label>
+            <select id="contato-interesse" name="interesse" required>
+              <option value="">Selecione uma opção</option>
+              <option value="bot-lances">Bot de Lances ODH Prisma Vector</option>
+              <option value="ebook">e-Book LiciteFácil 8x</option>
+              <option value="mentoria">Mentoria 12 Meses</option>
+              <option value="emissor">ODH Essência (Emissor NF-e)</option>
+              <option value="consultoria">Consultoria / Assessoria</option>
+              <option value="duvidas">Apenas tirar dúvidas</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contato-experiencia">Qual sua experiência com licitações?</label>
+            <select id="contato-experiencia" name="experiencia">
+              <option value="">Selecione uma opção</option>
+              <option value="nenhuma">Nunca participei</option>
+              <option value="iniciante">Já tentei, mas sem sucesso</option>
+              <option value="intermediario">Já venci algumas licitações</option>
+              <option value="experiente">Licito regularmente</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="contato-mensagem">Conte-nos sobre sua situação e objetivos *</label>
+            <textarea id="contato-mensagem" name="mensagem" required rows="5" 
+              placeholder="Descreva sua situação atual, o que você busca alcançar com licitações, dúvidas específicas, etc. Quanto mais detalhes, melhor poderemos ajudar."></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="contato-como-conheceu">Como conheceu a ODH?</label>
+            <select id="contato-como-conheceu" name="como_conheceu">
+              <option value="">Selecione uma opção</option>
+              <option value="google">Google / Busca</option>
+              <option value="instagram">Instagram</option>
+              <option value="facebook">Facebook</option>
+              <option value="linkedin">LinkedIn</option>
+              <option value="youtube">YouTube</option>
+              <option value="indicacao">Indicação de amigo/colega</option>
+              <option value="outro">Outro</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary large full-width">Enviar Mensagem →</button>
+          <small class="form-note">Responderemos em até 24 horas úteis.</small>
+        </form>
+
+        <div id="contatoSuccess" class="success-message" style="display: none;">
+          <span class="success-icon">✅</span>
+          <h3>Mensagem enviada com sucesso!</h3>
+          <p>Nossa equipe vai analisar sua solicitação e entrar em contato em breve.</p>
+          <a href="index.html" class="btn btn-outline">Voltar ao Site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="footer-brand">
+      <div class="logo-container">
+        <img src="assets/img/logo-odh.png" alt="ODH Logo" class="logo-img" />
+        <div class="logo-text">
+          <span class="logo-main">ODH</span>
+          <span class="logo-sub">COMÉRCIO E SERVIÇOS DE ASSESSORIA LTDA.</span>
+        </div>
+      </div>
+      <p class="footer-tagline">
+        Democratizando o acesso à tecnologia de licitações públicas no Brasil. 
+        Tecnologia própria, preço justo, atuação ética.
+      </p>
+    </div>
+
+    <div class="footer-links">
+      <div class="footer-col">
+        <h4>Links Rápidos</h4>
+        <ul>
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="index.html#sobre">Sobre Nós</a></li>
+          <li><a href="index.html#automacao">Bot de Lances</a></li>
+          <li><a href="index.html#mentoria">Mentoria</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contato</h4>
+        <ul class="contact-info">
+          <li><a href="mailto:odhassessoria@gmail.com">📧 odhassessoria@gmail.com</a></li>
+          <li><a href="tel:+5584999275704">📞 (84) 9 9927-5704</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2025 ODH Comércio e Serviços de Assessoria Ltda. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Salvar leads de contato em localStorage e gerar arquivo JSON
+document.getElementById('contatoForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  const formData = {
+    nome: document.getElementById('contato-nome').value,
+    email: document.getElementById('contato-email').value,
+    telefone: document.getElementById('contato-telefone').value,
+    empresa: document.getElementById('contato-empresa').value,
+    cnpj: document.getElementById('contato-cnpj').value,
+    interesse: document.getElementById('contato-interesse').value,
+    experiencia: document.getElementById('contato-experiencia').value,
+    mensagem: document.getElementById('contato-mensagem').value,
+    como_conheceu: document.getElementById('contato-como-conheceu').value,
+    data: new Date().toISOString(),
+    status: 'novo'
+  };
+  
+  // Salvar no localStorage
+  let leads = JSON.parse(localStorage.getItem('odh_leads_contato') || '[]');
+  leads.push(formData);
+  localStorage.setItem('odh_leads_contato', JSON.stringify(leads));
+  
+  // Mostrar mensagem de sucesso
+  document.getElementById('contatoForm').style.display = 'none';
+  document.getElementById('contatoSuccess').style.display = 'block';
+  
+  // Scroll para o topo da mensagem de sucesso
+  document.getElementById('contatoSuccess').scrollIntoView({ behavior: 'smooth' });
+});
+
+// Função para exportar leads (pode ser chamada no console do navegador)
+function exportarLeads() {
+  const leadsContato = JSON.parse(localStorage.getItem('odh_leads_contato') || '[]');
+  const leadsEssencia = JSON.parse(localStorage.getItem('odh_leads_essencia') || '[]');
+  
+  const todosLeads = {
+    contato: leadsContato,
+    essencia: leadsEssencia,
+    exportado_em: new Date().toISOString()
+  };
+  
+  const dataStr = JSON.stringify(todosLeads, null, 2);
+  const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
+  
+  const exportFileDefaultName = 'odh_leads_' + new Date().toISOString().split('T')[0] + '.json';
+  
+  const linkElement = document.createElement('a');
+  linkElement.setAttribute('href', dataUri);
+  linkElement.setAttribute('download', exportFileDefaultName);
+  linkElement.click();
+  
+  console.log('Leads exportados:', todosLeads);
+  return todosLeads;
+}
+
+// Função para visualizar leads no console
+function verLeads() {
+  const leadsContato = JSON.parse(localStorage.getItem('odh_leads_contato') || '[]');
+  const leadsEssencia = JSON.parse(localStorage.getItem('odh_leads_essencia') || '[]');
+  
+  console.log('=== LEADS DE CONTATO ===');
+  console.table(leadsContato);
+  console.log('=== LEADS ODH ESSÊNCIA ===');
+  console.table(leadsEssencia);
+  
+  return { contato: leadsContato, essencia: leadsEssencia };
+}
+</script>
+</body>
+</html>
