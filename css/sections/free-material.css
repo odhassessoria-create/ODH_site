@@ -1,0 +1,327 @@
+/**
+ * @fileoverview Free Material Sections
+ * @description Estilos das seções de material gratuito (isca) - topo e reforço
+ * Princípio: SRP - Apenas estilos das seções de material gratuito
+ */
+
+/* ===========================
+   FREE MATERIAL - TOPO
+   =========================== */
+.free-material-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #0e0e11 0%, #1a1a22 50%, #0e0e11 100%);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid rgba(245, 196, 0, 0.2);
+  border-bottom: 1px solid rgba(245, 196, 0, 0.2);
+}
+
+.free-material-section::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(245, 196, 0, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.free-material-section::after {
+  content: '';
+  position: absolute;
+  bottom: -30%;
+  left: -5%;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(245, 196, 0, 0.05) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.free-material-card {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
+}
+
+.free-material-content {
+  color: white;
+}
+
+.free-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, rgba(245, 196, 0, 0.15) 0%, rgba(245, 196, 0, 0.08) 100%);
+  color: var(--gold);
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border: 1px solid rgba(245, 196, 0, 0.3);
+  letter-spacing: 0.5px;
+}
+
+.free-material-content h2 {
+  font-size: 32px;
+  font-family: var(--font-heading);
+  margin-bottom: 15px;
+  line-height: 1.3;
+  color: var(--text-light);
+}
+
+.free-material-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: rgba(220, 220, 220, 0.85);
+  margin-bottom: 20px;
+}
+
+.free-material-list {
+  list-style: none;
+  margin: 20px 0 25px;
+  padding: 0;
+}
+
+.free-material-list li {
+  padding: 8px 0;
+  font-size: 15px;
+  color: rgba(220, 220, 220, 0.9);
+  position: relative;
+  padding-left: 28px;
+}
+
+.free-material-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.free-note {
+  display: block;
+  font-size: 13px;
+  color: rgba(220, 220, 220, 0.6);
+  margin-top: 12px;
+}
+
+.free-material-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.free-material-icon {
+  font-size: 100px;
+  opacity: 0.9;
+  animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 30px rgba(245, 196, 0, 0.2));
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===========================
+   FREE MATERIAL REINFORCEMENT - MEIO
+   =========================== */
+.free-material-reinforcement {
+  padding: 70px 0;
+  background: linear-gradient(135deg, #0e0e11 0%, #15151a 50%, #0e0e11 100%);
+  position: relative;
+}
+
+.free-material-reinforcement::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(245, 196, 0, 0.3) 50%, transparent 100%);
+}
+
+.free-material-reinforcement::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(245, 196, 0, 0.3) 50%, transparent 100%);
+}
+
+.reinforcement-card {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  background: linear-gradient(135deg, rgba(26, 26, 34, 0.8) 0%, rgba(20, 20, 26, 0.9) 100%);
+  padding: 50px 40px;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(245, 196, 0, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.reinforcement-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -30%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(245, 196, 0, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.doubt-icon {
+  font-size: 56px;
+  display: block;
+  margin-bottom: 15px;
+  filter: drop-shadow(0 0 20px rgba(245, 196, 0, 0.3));
+}
+
+.reinforcement-card h2 {
+  font-size: 32px;
+  font-family: var(--font-heading);
+  margin-bottom: 12px;
+  color: var(--text-light);
+}
+
+.reinforcement-card > p {
+  font-size: 18px;
+  color: rgba(220, 220, 220, 0.8);
+  margin-bottom: 25px;
+}
+
+.reinforcement-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto 30px;
+  max-width: 400px;
+  text-align: left;
+}
+
+.reinforcement-benefits li {
+  padding: 10px 0;
+  font-size: 15px;
+  color: rgba(220, 220, 220, 0.9);
+  position: relative;
+  padding-left: 28px;
+}
+
+.reinforcement-benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--gold);
+  font-weight: bold;
+}
+
+.reinforcement-card .btn-outline {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.reinforcement-card .btn-outline:hover {
+  background: var(--gold);
+  color: var(--dark);
+}
+
+.reinforcement-note {
+  display: block;
+  font-size: 13px;
+  color: rgba(220, 220, 220, 0.5);
+  margin-top: 15px;
+}
+
+/* ===========================
+   PROMO BANNER UPDATES
+   =========================== */
+.promo-banner .normal-price-note {
+  display: block;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 8px;
+}
+
+.promo-banner .legal-small {
+  display: block;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 12px;
+  font-style: italic;
+}
+
+/* Badge Fundador */
+.badge-founder {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--gold) 0%, #e6ac00 100%);
+  color: var(--dark);
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+/* E-book price note */
+.ebook-price-info {
+  background: rgba(245, 196, 0, 0.1);
+  border: 1px solid rgba(245, 196, 0, 0.3);
+  border-radius: var(--radius-md);
+  padding: 15px 20px;
+  margin: 20px 0;
+}
+
+.ebook-price-note {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media (max-width: 768px) {
+  .free-material-card {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .free-material-content h2 {
+    font-size: 26px;
+  }
+
+  .free-material-visual {
+    display: none;
+  }
+
+  .free-material-list {
+    text-align: left;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .reinforcement-card {
+    padding: 35px 25px;
+  }
+
+  .reinforcement-card h2 {
+    font-size: 26px;
+  }
+
+  .reinforcement-benefits {
+    text-align: left;
+  }
+}

@@ -113,6 +113,11 @@
   margin-top: 50px;
 }
 
+.modules-grid.course-modules-grid {
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
 .module-card {
   background: var(--dark-3);
   border-radius: 12px;
@@ -120,6 +125,14 @@
   position: relative;
   border: 1px solid rgba(255,255,255,0.05);
   transition: transform 0.3s, border-color 0.3s;
+}
+
+.course-modules-grid .module-card {
+  padding: 25px 20px;
+}
+
+.course-modules-grid .module-card h3 {
+  font-size: 1.1rem;
 }
 
 .module-card:hover {
@@ -211,6 +224,31 @@
   gap: 25px;
 }
 
+.includes-list.included-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.included-grid .include-item {
+  background: rgba(255,255,255,0.03);
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.included-grid .include-icon {
+  font-size: 1.5rem;
+}
+
+.included-grid .include-item strong {
+  font-size: 1rem;
+}
+
+.included-grid .include-item p {
+  font-size: 0.85rem;
+}
+
 .include-item {
   display: flex;
   gap: 20px;
@@ -289,11 +327,23 @@
   border: 1px solid var(--green);
   padding: 12px 20px;
   border-radius: 8px;
+  margin-bottom: 15px;
 }
 
 .price-savings span {
   color: var(--green);
   font-weight: 600;
+}
+
+.price-card.price-comparison {
+  background: linear-gradient(145deg, rgba(245, 196, 0, 0.1), var(--dark-3));
+}
+
+.price-note {
+  display: block;
+  color: var(--text-light);
+  font-size: 0.85rem;
+  margin-top: 10px;
 }
 
 /* Signup Section */
@@ -398,6 +448,12 @@
 }
 
 /* Responsive */
+@media (max-width: 1200px) {
+  .modules-grid.course-modules-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 992px) {
   .modules-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -409,6 +465,10 @@
   
   .includes-cta {
     order: -1;
+  }
+  
+  .includes-list.included-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -425,7 +485,12 @@
     font-size: 1.4rem;
   }
   
-  .modules-grid {
+  .modules-grid,
+  .modules-grid.course-modules-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .includes-list.included-grid {
     grid-template-columns: 1fr;
   }
   
