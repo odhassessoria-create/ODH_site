@@ -54,9 +54,9 @@ Quer saber mais sobre nossos produtos e serviços? Fale conosco!
 
 [![Formulário de Contato](https://img.shields.io/badge/📧%20Formulário-Enviar%20Mensagem-4a90e2?style=for-the-badge)](https://odhassessoria-create.github.io/ODH_site/contato.html)
 
-[![WhatsApp](https://img.shields.io/badge/📱%20WhatsApp-Falar%20Agora-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://wa.me/5584999275704)
+[![WhatsApp]
 
-[![Localização](https://img.shields.io/badge/📍%20Localização-Ver%20no%20Mapa-EA4335?style=for-the-badge&logo=google-maps&logoColor=white)](https://maps.app.goo.gl/vrfrgXGEDxFtJr8v8)
+[![Localização]
 
 </div>
 
